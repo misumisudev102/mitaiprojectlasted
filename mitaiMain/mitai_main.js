@@ -47,4 +47,4 @@ function servertime() {
     });
 
 }
-servertime();
+servertime()

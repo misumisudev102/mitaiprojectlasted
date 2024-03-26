@@ -177,7 +177,7 @@ module.exports.unloadModule = function ({ moduleList, threadID, messageID, getTe
 }
 
 module.exports.run = function ({ event, args, api, getText }) {
-  if (event.senderID != 100077497896569) return api.sendMessage(`[ 𝗘𝗩𝗘𝗡𝗧𝗦 ] → Cần quyền SUPER ADMIN để thực hiện lệnh`, event.threadID, event.messageID)
+  if (event.senderID != global.config.ADMC[0]) return api.sendMessage(`[ 𝗘𝗩𝗘𝗡𝗧𝗦 ] → Cần quyền SUPER ADMIN để thực hiện lệnh`, event.threadID, event.messageID)
   
     const { readdirSync } = global.nodemodule["fs-extra"];
     const { join } = global.nodemodule["path"];

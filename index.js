@@ -3,7 +3,7 @@ const chalkAnimation = require('chalkercli');
 const readline = require('readline');
 const ProgressBar = require('progress');
 
-const str = '[ 𝗦𝗘𝗥𝗩𝗘𝗥-𝗟𝗢𝗔𝗗𝗜𝗡𝗚 ] » 𝗧𝗶𝗲̂́𝗻 𝗵𝗮̀𝗻𝗵 𝗹𝗼𝗮𝗱𝗶𝗻𝗴 𝘁𝗼𝗮̀𝗻 𝗯𝗼̣̂ 𝗵𝗲̣̂ 𝘁𝗵𝗼̂́𝗻𝗴.';
+const str = '[ SERVER-LOADING ] » Đang tiến hành khởi động hệ thống, vui lòng chờ một chút.';
 const rainbow = chalkAnimation.rainbow(str);
 const progressBar = new ProgressBar('[:bar]', { total: 5 });
 

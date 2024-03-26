@@ -17,7 +17,7 @@ const path = require("path");
 const chalk = require("chalk");
 const getIP = require('ipware')().get_ip;
 const requestIp = require('request-ip');
-const PORT = process.env.PORT || 5500;
+const PORT = process.env.PORT || 8300;
 
 function randomColor() {
     var color = "";
@@ -73,7 +73,7 @@ servertime();
 
 const app = express();
 
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
     const api = require("./scr_api/routes/api");
     app.set("json spaces", 4);
     app.use(requestIp.mw());
@@ -100,7 +100,7 @@ logMitai(
     chalk.bold.hex(randomColor()).bold(`[ ANTI - DDOS ] »`),
     chalk.bold.hex(randomColor()).bold(`Khởi động thành công chế độ chống ddos`));
 
-app.use('/', function(req, res, next) {
+app.use('/', function (req, res, next) {
     const ipInfo = getIP(req);
     const clientIp = ipInfo.clientIp;
     if (ipRequestCount[clientIp]) {
@@ -146,12 +146,12 @@ app.use('/', function(req, res, next) {
         chalk.bold.hex(randomColor()).bold(`đã truy cập api:`),
         chalk.bold.hex(randomColor()).bold(`${decodeURIComponent(req.originalUrl)}`)
     );
-    next();
+    next()
 });
 
 app.listen(PORT, () => {
     logMitai(chalk.bold.hex(randomColor()).bold(`[ SERVER-API ] → Tải thành công server api`));
-  });
+});
 
 const config = {
     status: true,
@@ -190,7 +190,7 @@ try {
     if (existsSync(global.client.configPath.replace(/\.json/g, "") + ".temp")) {
         configValue = readFileSync(global.client.configPath.replace(/\.json/g, "") + ".temp");
         configValue = JSON.parse(configValue);
-        logger.loader(`Không tìm thấy: ${global.client.configPath.replace(/\.json/g,"") + ".temp"}`);
+        logger.loader(`Không tìm thấy: ${global.client.configPath.replace(/\.json/g, "") + ".temp"}`);
     } else logger.loader("Không tìm thấy config cho soucre!", "error");
 }
 
@@ -221,7 +221,7 @@ for (const item of langData) {
     global.language[head][key] = value;
 }
 
-global.getText = function(...args) {
+global.getText = function (...args) {
     const langText = global.language;
     if (!langText.hasOwnProperty(args[0])) throw `${__filename} - Not found key language: ${args[0]}`;
     var text = langText[args[0]][args[1]];
@@ -247,7 +247,7 @@ try {
 function onBot({ models }) {
     const loginData = {};
     loginData['appState'] = appState;
-    login(loginData, async(loginError, loginApiData) => {
+    login(loginData, async (loginError, loginApiData) => {
         if (loginError) return logger(JSON.stringify(loginError), `ERROR`);
         loginApiData.setOptions(global.config.FCAOption)
         let loginState = loginApiData.getAppState()
@@ -266,7 +266,7 @@ function onBot({ models }) {
         logger.loader('Id Admin chính là: ' + global.config.ADMC[0])
         global.config.version = '1.2.15'
         global.client.timeStart = new Date().getTime(),
-            function() {
+            function () {
                 const listCommand = readdirSync(global.client.mainPath + '/modules/commands').filter(command => command.endsWith('.js') && !command.includes('example') && !global.config.commandDisabled.includes(command));
                 for (const command of listCommand) {
                     try {
@@ -274,7 +274,7 @@ function onBot({ models }) {
                         if (!module.config || !module.run || !module.config.commandCategory) throw new Error(global.getText('mitai', 'errorFormat'));
                         if (global.client.commands.has(module.config.name || '')) throw new Error(global.getText('mitai', 'nameExist'));
                         if (!module.languages || typeof module.languages != 'object' || Object.keys(module.languages).length == 0)
-                        //logger.loader(global.getText('mirai', 'notFoundLanguage', module.config.name), 'warn');
+                            //logger.loader(global.getText('mirai', 'notFoundLanguage', module.config.name), 'warn');
                             if (module.config.dependencies && typeof module.config.dependencies == 'object') {
                                 for (const reqDependencies in module.config.dependencies) {
                                     const reqDependenciesPath = join(__dirname, 'nodemodules', 'node_modules', reqDependencies);
@@ -335,7 +335,7 @@ function onBot({ models }) {
                     };
                 }
             }(),
-            function() {
+            function () {
                 const events = readdirSync(global.client.mainPath + '/modules/events').filter(event => event.endsWith('.js') && !global.config.eventDisabled.includes(event));
                 for (const ev of events) {
                     try {
@@ -424,7 +424,7 @@ function onBot({ models }) {
 //===== Tải dữ liệu người dùng và nhóm =====//
 //////////////////////////////////////////////
 
-(async() => {
+(async () => {
     try {
         logger.loader('Tiến hành tải dữ liệu cho người dùng và nhóm')
         await sequelize.authenticate();
@@ -441,5 +441,5 @@ function onBot({ models }) {
     }
     logger('Không thể tải dữ liệu người dùng và nhóm', error)
 })();
-process.on('unhandledRejection', (err, p) => {})
+process.on('unhandledRejection', (err, p) => { })
     .on('uncaughtException', err => { console.log(err); });
