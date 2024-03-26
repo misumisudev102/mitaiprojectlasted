@@ -1,0 +1,113 @@
+{
+  "_from": "fca-disme",
+  "_id": "fca-disme",
+  "_inBundle": false,
+  "_integrity": "sha512-8bniqzEh42myHe964gww42oItVQLtyQLrvMZIFaY5j4Vai+HTXQUw7n408+lClHHDdohDsEiGuIuKE6MIPd95A==",
+  "_location": "/fca-disme",
+  "_phantomChildren": {
+    "ansi": "0.3.1",
+    "are-we-there-yet": "1.0.6",
+    "gauge": "1.2.7"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "fca-disme",
+    "name": "fca-disme",
+    "escapedName": "fca-disme",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/fca-disme/-/fca-disme-1.3.16.tgz",
+  "_shasum": "c1b7f066c1700d692821bd7013ba313c4edbdd19",
+  "_spec": "fca-disme",
+  "_where": "C:\\Users\\truonggiangvps\\Desktop\\mirai1.2.15-vuotgban-get",
+  "author": {
+    "name": "Avery, David, Maude, Benjamin, UIRI"
+  },
+  "bugs": {
+    "url": "https://github.com/Schmavery/facebook-chat-api/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "bluebird": "^2.11.0",
+    "cheerio": "^1.0.0-rc.10",
+    "https-proxy-agent": "^4.0.0",
+    "mqtt": "^4.2.8",
+    "npmlog": "^1.2.0",
+    "request": "^2.88.2",
+    "websocket-stream": "^5.5.0"
+  },
+  "deprecated": false,
+  "description": "A Facebook chat API that doesn't rely on XMPP. Will NOT be deprecated after April 30th 2015.",
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "mocha": "^7.0.1",
+    "prettier": "^1.11.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": ">=10.x"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "es2017": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "rules": {
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "no-unused-vars": [
+        1,
+        {
+          "argsIgnorePattern": "^_",
+          "varsIgnorePattern": "^_"
+        }
+      ],
+      "no-empty": [
+        "error",
+        {
+          "allowEmptyCatch": true
+        }
+      ]
+    }
+  },
+  "homepage": "https://github.com/Schmavery/facebook-chat-api#readme",
+  "keywords": [
+    "facebook",
+    "chat",
+    "api",
+    "fca"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "fca-disme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Schmavery/facebook-chat-api.git"
+  },
+  "scripts": {
+    "lint": "eslint **.js",
+    "prettier": "prettier utils.js src/* --write",
+    "test": "mocha"
+  },
+  "version": "3.2.5"
+}

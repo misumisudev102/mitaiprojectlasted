@@ -1,0 +1,123 @@
+{
+    "notiGroup": true,
+    "iconUnsend": {
+        "status": true,
+        "icon": "😠"
+    },
+    "NOTIFICATION": true,
+    "language": "vi",
+    "keyActive": "",
+    "DeveloperMode": false,
+    "autoCreateDB": true,
+    "allowInbox": true,
+    "autoClean": true,
+    "adminOnly": false,
+    "encryptSt": false,
+    "UPTIME": 1231526.035836716,
+    "DASHBOARD": false,
+    "commandDisabled": [
+        "autocamxuc.js",
+        "hentai.js",
+        "hi.js",
+        "hi2.js",
+        "autothoitiet"
+    ],
+    "eventDisabled": [],
+    "BOTNAME": "𝗠𝗜𝗧𝗔𝗜 𝗣𝗥𝗢𝗝𝗘𝗖𝗧🦖",
+    "PREFIX": "+",
+    "URLINK": "207.148.120.156:5500",
+    "ADMC": [
+        "100080647629698"
+    ],
+    "ADMINBOT": [
+        "100080647629698",
+        "1824557330"
+    ],
+    "NDH": [
+        "100080647629698",
+        ""
+    ],
+    "DATABASE": {
+        "sqlite": {
+            "storage": "data.sqlite"
+        }
+    },
+    "APPSTATEPATH": "appstate.json",
+    "FBSTATEPATH": "fbstate.json",
+    "NPM_FCA": "ductai-chatbot",
+    "SETUP_WIN": {
+        "port": 8888,
+        "use": "Nếu chạy nhiều hơn 1 file trên win thì thay đổi số này ở file thứ 2, 3, 4..."
+    },
+    "FCAOption": {
+        "forceLogin": true,
+        "listenEvents": true,
+        "pauseLog": true,
+        "logLevel": "silent",
+        "selfListen": true,
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_7_9 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko)"
+    },
+    "version": "1.2.15",
+    "help": {
+        "autoUnsend": true,
+        "delayUnsend": 120
+    },
+    "cave": {
+        "cooldownTime": 1000000
+    },
+    "daily": {
+        "cooldownTime": 7200,
+        "rewardCoin": 2000
+    },
+    "work": {
+        "cooldownTime": 1200000
+    },
+    "adminUpdate": {
+        "autoUnsend": true,
+        "sendNoti": true,
+        "timeToUnsend": 120
+    },
+    "adminPaseOnly": false,
+    "ndhOnly": false,
+    "vieclam": {
+        "cooldownTime": 1200000
+    },
+    "checknude": {
+        "maxColumn": 10
+    },
+    "loto": {
+        "maxPlayers": 10,
+        "getDelay": 8
+    },
+    "math": {
+        "WOLFRAM": "T8J8YV-H265UQ762K"
+    },
+    "mine": {
+        "APIKEY": ""
+    },
+    "pokemon": {
+        "APIKEY": ""
+    },
+    "sim": {
+        "APIKEY": "chaoemnha"
+    },
+    "subnautica": {
+        "APIKEY": ""
+    },
+    "video": {
+        "YOUTUBE_API": "AIzaSyC1HQ3HHQSzgXdvlm5vZ2gWX0Ubk8GYD-c"
+    },
+    "weather": {
+        "OPEN_WEATHER": "081c82065cfee62cb7988ddf90914bdd"
+    },
+    "xidach": {
+        "maxPlayers": 5,
+        "normalWinBonus": 1,
+        "superWinBonus": 2,
+        "epicWinBonus": 4
+    },
+    "leave": {
+        "status": false,
+        "number": 0
+    }
+}

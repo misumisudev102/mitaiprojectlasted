@@ -1,0 +1,37 @@
+{
+  "name": "Lê Minh Tiến BG",
+  "ID": "100060894693968",
+  "mainROD": "Harpak",
+  "GPS": {
+    "locate": "The Crater",
+    "area": "Lost River"
+  },
+  "fishBag": [
+    {
+      "ID": 0,
+      "name": "Đừng bán con cá này ko là lỗi tao đéo chịu trách nhiệm đâu",
+      "category": "Legendary",
+      "size": 999999,
+      "sell": 0
+    },
+    {
+      "ID": 1,
+      "name": "Blaza Leviathan",
+      "category": "Legendary",
+      "size": 11500,
+      "sell": 2130900,
+      "image": "https://i.imgur.com/BwzL8ou.png"
+    }
+  ],
+  "item": [
+    {
+      "name": "Harpak",
+      "price": 1312350000,
+      "durability": 119990,
+      "countdown": 1,
+      "countdownData": 1668725102795,
+      "image": "https://i.imgur.com/S7eXgbY.png"
+    }
+  ],
+  "timeRegister": "05:42:47, 18/11/2022"
+}

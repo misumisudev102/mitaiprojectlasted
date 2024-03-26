@@ -1,0 +1,37 @@
+{
+  "name": "CuShin Songan",
+  "ID": "100092485396437",
+  "mainROD": "D.U Core Harpoon",
+  "GPS": {
+    "locate": "The Crater",
+    "area": "Mushroom Forest"
+  },
+  "fishBag": [
+    {
+      "ID": 0,
+      "name": "Đừng bán con cá này ko là lỗi tao đéo chịu trách nhiệm đâu",
+      "category": "Legendary",
+      "size": 999999,
+      "sell": 0
+    }
+  ],
+  "item": [
+    {
+      "name": "Light Iron Harpoon",
+      "price": 400,
+      "durability": 0,
+      "countdown": 200,
+      "countdownData": 1686931481274,
+      "image": "https://i.imgur.com/gQuka5L.jpg"
+    },
+    {
+      "name": "D.U Core Harpoon",
+      "price": 58800,
+      "durability": 420,
+      "countdown": 40,
+      "countdownData": 1687103845107,
+      "image": "https://i.imgur.com/vWRvdAP.png"
+    }
+  ],
+  "timeRegister": "21:53:00, 16/6/2023"
+}

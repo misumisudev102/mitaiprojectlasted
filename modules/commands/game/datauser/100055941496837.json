@@ -1,0 +1,53 @@
+{
+  "name": "Nguyễn Đức Tài",
+  "ID": "100055941496837",
+  "mainROD": "Harpak",
+  "GPS": {
+    "locate": "Sector Zero",
+    "area": "Crystal Caves"
+  },
+  "fishBag": [
+    {
+      "ID": 0,
+      "name": "Đừng bán con cá này ko là lỗi tao đéo chịu trách nhiệm đâu",
+      "category": "Legendary",
+      "size": 999999,
+      "sell": 0
+    },
+    {
+      "ID": 1,
+      "name": "Red Feather Fish",
+      "category": "Uncommon",
+      "size": 35,
+      "sell": 440,
+      "image": "https://i.imgur.com/6eugLip.png"
+    },
+    {
+      "ID": 2,
+      "name": "Red Feather Fish",
+      "category": "Uncommon",
+      "size": 35,
+      "sell": 440,
+      "image": "https://i.imgur.com/6eugLip.png"
+    },
+    {
+      "ID": 3,
+      "name": "Rockgrub",
+      "category": "Epic",
+      "size": 24,
+      "sell": 1180,
+      "image": "https://i.imgur.com/xbdLdm4.jpg"
+    }
+  ],
+  "item": [
+    {
+      "name": "Harpak",
+      "price": 1312350000,
+      "durability": 119960,
+      "countdown": 1,
+      "countdownData": 1686932165427,
+      "image": "https://i.imgur.com/S7eXgbY.png"
+    }
+  ],
+  "timeRegister": "21:52:17, 16/6/2023"
+}
