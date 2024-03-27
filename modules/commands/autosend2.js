@@ -17,6 +17,7 @@ module.exports.onLoad = o => {
     const dtaicute = m.format("HH:mm:ss");
     const hour = m.format("HH");
     if ((dtaicute === `${hour}:00:00` || dtaicute === `${hour}:30:00`) && (hour >= "00" && hour <= "24")) {
+      const time = process.uptime();
       const apiUrl = "https://16d8b138-a711-4739-a5c3-f6b6da076a1e-00-369vyq0j9u8jx.pike.replit.dev/girl";
       const dtaicutevc = ["1", "2", "3", "4", "6", "9", "12"];
       const array = [];
