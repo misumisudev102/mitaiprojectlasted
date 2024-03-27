@@ -70,6 +70,7 @@
         "systeminformation": "^5.22.6",
         "totp-generator": "0.0.14",
         "tslib": "^2.5.3",
+        "uniqid": "^5.4.0",
         "useragent": "^2.3.0",
         "uuid": "^9.0.0",
         "websocket-stream": "^5.5.0",

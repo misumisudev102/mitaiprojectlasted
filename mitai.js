@@ -17,7 +17,7 @@ const path = require("path");
 const chalk = require("chalk");
 const getIP = require('ipware')().get_ip;
 const requestIp = require('request-ip');
-const PORT = process.env.PORT || 8300;
+const PORT = process.env.PORT || 7263;
 
 function randomColor() {
     var color = "";
