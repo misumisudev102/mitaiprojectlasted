@@ -44,19 +44,7 @@ module.exports.run = async function ({ api, event, args, client, Users, Threads,
   var tai = event.senderID;
 
   api.sendMessage({
-    body: `======「 𝐒𝐀𝐈 𝐋𝐄̣̂𝐍𝐇 」======
-[⏰] 𝐓𝐡𝐨̛̀𝐢 𝐠𝐢𝐚𝐧: ${gio}
-[🗓] 𝐓𝐡𝐮̛́: ${thu}
-[🗂] 𝐃𝐮̀𝐧𝐠 𝐡𝐞𝐥𝐩 𝐡𝐨𝐚̣̆𝐜 𝐦𝐞𝐧𝐮 𝐚𝐥𝐥 𝐝𝐞̂̉ 𝐱𝐞𝐦 𝐭𝐨𝐚̀𝐧 𝐛𝐨̣̂ 𝐥𝐞̣̂𝐧𝐡
-𝐓𝐇𝐎̂𝐍𝐆 𝐓𝐈𝐍 𝐍𝐆𝐔̛𝐎̛̀𝐈 𝐃𝐔̀𝐍𝐆 𝐋𝐄̣̂𝐍𝐇
-[📇] 𝐓𝐞̂𝐧:
-${name}
-[💾] 𝐋𝐢𝐧𝐤 𝐟𝐚𝐜𝐞𝐛𝐨𝐨𝐤: https://wwww.facebook.com/${tai}
-[🪪] 𝐔𝐢𝐝: ${tai}
-𝐓𝐡𝐚̉ 𝐜𝐚̉𝐦 𝐱𝐮́𝐜 👍 𝐝𝐞̂̉ 𝐱𝐞𝐦 𝐭𝐨𝐚̀𝐧 𝐛𝐨̣̂ 𝐭𝐡𝐨̂𝐧𝐠 𝐭𝐢𝐧 𝐧𝐡𝐨́𝐦
-[⏰] 𝐁𝐨𝐭 𝐡𝐢𝐞̣̂𝐧 𝐭𝐚̣𝐢 𝐝𝐚̃ 𝐨𝐧𝐥 𝐝𝐮̛𝐨̛̣𝐜
-${anh} 𝐆𝐢𝐨̛̀,${la} 𝐏𝐡𝐮́𝐭,${dtai} 𝐆𝐢𝐚̂𝐲
-`, attachment: array
+    body: `Xin chào! Tôi là bot, dự án robot miễn phí của ALY Corporation. Bạn cần giúp gì?\n\nTime run - ${anh} : ${la} : ${dtai}`, attachment: array
   }, event.threadID, (err, info) => {
     global.client.handleReaction.push({
       name: this.config.name,
